@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aperture & Field Photography</title>
+<meta name="description" content="Get in touch to book a landscape, wildlife, sport, portrait or commercial photography session.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="mark">A&F</span> Aperture &amp; Field</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="nav-cta">Book a shoot</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-intro">
+  <div class="wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h1 class="mt-40">Let's plan your shoot</h1>
+    <p class="lede">Tell me a little about what you need — category, rough date, and location — and I'll come back to you within two working days with availability and a quote.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <form id="enquiry-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='block'; this.querySelectorAll('input,select,textarea,button').forEach(el => el.disabled = true);">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="category">What kind of shoot?</label>
+            <select id="category" name="category" required>
+              <option value="">Select a category</option>
+              <option value="landscape">Landscape</option>
+              <option value="animal">Animal / Wildlife</option>
+              <option value="sport">Sport</option>
+              <option value="portraiture">Portraiture</option>
+              <option value="commercial">Commercial</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">Preferred date (if known)</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="field">
+            <label for="message">Tell me about the project</label>
+            <textarea id="message" name="message" required placeholder="Location, group size, the look you're after, anything else useful."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+          <p class="form-success" style="display:none; margin-top:16px; font-family:var(--font-mono); font-size:13px; color:var(--amber-deep);">Thanks — your enquiry details are ready to send. (This demo form isn't wired to an inbox yet — connect it to your email or booking tool when the site goes live.)</p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Other ways to reach me</h3>
+
+        <div class="info-block">
+          <span class="il">Email</span>
+          <p><a href="mailto:hello@apertureandfield.co.uk">hello@apertureandfield.co.uk</a></p>
+        </div>
+
+        <div class="info-block">
+          <span class="il">Phone</span>
+          <p><a href="tel:+441234567890">+44 1234 567 890</a></p>
+        </div>
+
+        <div class="info-block">
+          <span class="il">Based in</span>
+          <p>United Kingdom — available for travel worldwide</p>
+        </div>
+
+        <div class="info-block">
+          <span class="il">Response time</span>
+          <p>Within two working days</p>
+        </div>
+
+        <div class="info-block">
+          <span class="il">Follow the work</span>
+          <div class="social-row">
+            <a href="social.html#instagram" aria-label="Instagram">IG</a>
+            <a href="social.html#flickr" aria-label="Flickr">FL</a>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <span class="il">Existing clients</span>
+          <p>If you've already had a shoot with me, your private gallery link will be sent by email once it's ready — no need to enquire again here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="mark">A&F</span> Aperture &amp; Field</a>
+        <p>Landscape, wildlife, sport, portrait and commercial photography — based in the UK, available for travel worldwide.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="social.html">Social feed</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="gallery.html#landscape">Landscape</a></li>
+          <li><a href="gallery.html#animal">Animal</a></li>
+          <li><a href="gallery.html#sport">Sport</a></li>
+          <li><a href="gallery.html#portraiture">Portraiture</a></li>
+          <li><a href="gallery.html#commercial">Commercial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@apertureandfield.co.uk">hello@apertureandfield.co.uk</a></li>
+          <li><a href="tel:+441234567890">+44 1234 567 890</a></li>
+          <li><a href="contact.html">Enquiry form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Aperture &amp; Field Photography. All images shown are placeholders pending upload.</span>
+      <span>Site built for future client galleries &amp; print sales.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
